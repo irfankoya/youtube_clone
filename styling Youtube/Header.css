@@ -1,0 +1,191 @@
+.header{
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom: 1px solid rgb(231, 231, 231);
+    z-index: 10;
+    }
+.left-part{
+    width: 250px;
+    display: flex;
+    align-items: center;
+}
+.left-part p{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 35px;
+    margin-top: 17px;
+}
+
+.menu{
+    
+    height: 40px;
+    margin-left: 25px;
+    margin-right: 25px;
+    
+}
+
+.middle-part{
+    
+    flex: 1;
+    
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    
+}
+.right-part{
+    width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+.you-icon{
+    height: 35px;
+     margin-right: 6px;
+    display: inline-block;
+    
+}
+.src{
+    height: 24px;
+    width: 24px;
+}
+.mic{
+    height: 24px;
+}
+.srch{
+   flex: 1;
+   height: 40px;
+   padding-left: 10px;
+   font-size: 17px;
+   border:  1px solid rgb(206, 206, 206);
+   box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.10);
+   width: 0;
+   border-top-left-radius: 50px;
+   border-bottom-left-radius: 50px;
+   margin-left: 32px;
+    
+}
+.srch::placeholder{
+    font-size: 17px;
+}
+.src-but{
+    height: 40px;
+    width: 80px;
+    border-color: rgb(206, 206, 206);
+    border-width: 1px;
+    border-style: solid;
+    margin-left: -1px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding-top: 4px;
+    cursor: pointer;
+}
+.mic-but{
+    height: 40px;
+    border-radius: 50px;
+    margin-left: 20px;
+    border: none;
+    size: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-color: rgb(206, 206, 206);
+    cursor: pointer;
+}
+.src-but,
+.mic-but,
+.upload-row,
+.apps-row,
+.bellicon-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.src-but .tooltip,
+.mic-but .tooltip,
+.upload-row .tooltip,
+.apps-row .tooltip,
+.bellicon-row .tooltip{
+    position: absolute;
+    background-color: gray;
+    padding: 5px 8px;
+    color: white;
+    border-radius: 3px;
+    bottom: -35px;
+    opacity: 0;
+    transition: opacity 0.15px;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.src-but:hover .tooltip,
+.mic-but:hover .tooltip,
+.upload-row:hover .tooltip,
+.apps-row:hover .tooltip,
+.bellicon-row:hover .tooltip{
+    opacity: 1;
+}
+.upload,
+.apps,
+.bellicon,
+.channelpicc{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    
+    }
+.bellicon-row{
+     position: relative;
+    }
+.bellicon-num{
+    position: absolute;
+    right: 4px;
+    top: -2px;
+    background-color: rgb(200, 0, 0);
+    color: white;
+    border-radius: 20px;
+    font-size: 12px;
+    padding-top : 1.5px;
+     padding-right: 5px;
+    padding-bottom: 1.5px;
+    padding-left: 5px;
+    height: 16px;
+    width: 16px;
+    }
+.channelpicc{
+    border-radius: 100px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    
+    
+}
+.menu{
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
+.you-icon{
+    height: 20px;
+    width: 97px;
+    cursor: pointer;
+}
+/* .upload:hover{
+    background-color: rgb(206, 206, 206);
+    width: 24px;
+    height: 24px;
+    border-radius: 18px;
+    margin: 16px;
+} */
+    
+    
